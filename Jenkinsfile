@@ -9,8 +9,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master',
-                    url: 'git@github.com:codefeeding99/Testing-and-Builing-using-pipe-line.git',
+                git branch: 'main',
+                    url: 'https://github.com/durgasnv/jenkins.git',
                     credentialsId: 'durgasnv'
             }
         }
