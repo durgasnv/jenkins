@@ -11,13 +11,13 @@ pipeline {
             steps {
                 git branch: 'master',
                     url: 'git@github.com:codefeeding99/Testing-and-Builing-using-pipe-line.git',
-                    credentialsId: 'pipeline key'
+                    credentialsId: 'durgasnv'
             }
         }
 
         stage('Build & Test') {
             steps {
-                bat 'mvn clean install'
+                sh 'mvn clean install'
             }
         }
 
